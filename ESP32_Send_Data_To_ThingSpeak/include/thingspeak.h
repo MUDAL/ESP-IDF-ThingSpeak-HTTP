@@ -30,7 +30,7 @@ void thingspeak_config(char* url);
  */
 void thingspeak_open_connection(char* url,esp_http_client_handle_t* client,char* write_api_key);
 /**
- * @brief Loads data for a specified field in the URL.
+ * @brief Adds data for a specified field to the URL.
  * 
  * @param url       URL buffer [allocate about 200 bytes].
  * @param field_num Specific field to be written to. [Ranges from 1 to 8].
@@ -38,13 +38,13 @@ void thingspeak_open_connection(char* url,esp_http_client_handle_t* client,char*
  */
 void thingspeak_set_field(char* url,thingspeak_field_t field_num,uint32_t field_val);
 /**
- * @brief 
+ * @brief Sends API request (for transmitting data) to the ThingSpeak server.  
  * @param url    URL buffer [allocate about 200 bytes].
  * @param client pointer to HTTP client handle.
  */
 void thingspeak_send_data(char* url,esp_http_client_handle_t* client);
 /**
- * @brief 
+ * @brief Ends HTTP connection.
  * 
  * @param client pointer to HTTP client handle.
  */
