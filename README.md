@@ -42,7 +42,7 @@ Note: ``WRITE_API_KEY`` is a 16-digit code. A ``POST`` request can also be used 
 ## Project structure (Visual Studio Code)  
 1. Source files can be found in ``ESP32_Send_Data_To_ThingSpeak\src``.
 2. Header files can be found in ``ESP32_Send_Data_To_ThingSpeak\include``.  
-3. The ``platform.ini`` file is a project configuration file that sets necessary parameters for our board within the ``visual studio code`` environment.  
+3. The ``platformio.ini`` file is a project configuration file that sets necessary parameters for our board within the ``visual studio code`` environment.  
 
 ## Building the project     
 1. Open ``ESP32_Send_Data_To_ThingSpeak\include\credentials.h``  
