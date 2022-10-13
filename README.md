@@ -1,7 +1,7 @@
 # ESP-IDF-ThingSpeak-HTTP  
 
 ## Description  
-This project involves the communication between an ``ESP32 + BME280 sensor`` and the ThingSpeak server using the ``HTTP`` protocol. Humidity and temperature readings are taken by a ``BME280`` sensor and uploaded to ThingSpeak by the ``ESP32`` using ``REST APIs``. More information will be provided on these APIs are they are crucial in writing data to the server as well as reading data from it. The project is developed using ``ESP-IDF`` drivers (Wi-Fi, HTTP client, I2C, GPIO, etc.).  
+This project involves the communication between an ``ESP32 + BME280 sensor`` and the ThingSpeak server using the ``HTTP`` protocol. Humidity and temperature readings are taken by a ``BME280`` sensor and uploaded to ThingSpeak (periodically) by the ``ESP32`` using ``REST APIs``. More information will be provided on these APIs are they are crucial in writing data to the server as well as reading data from it. The project is developed using ``ESP-IDF`` drivers (Wi-Fi, HTTP client, I2C, GPIO, etc.).  
 
 ## Requirements  
 1. ESP32 Dev Board  
@@ -38,6 +38,11 @@ The image below shows the format for the HTTP requests that must be sent to Thin
 2. Writing 75 to field1 and 71 to field2: ``GET https://api.thingspeak.com/update?api_key=<WRITE_API_KEY>&field1=75&field2=71``  
 The pattern can be used to access more fields (maximum of 8).  
 Note: ``WRITE_API_KEY`` is a 16-digit code. A ``POST`` request can also be used for writing data to the server.  
+
+## Project structure (Visual Studio Code)  
+1. Source files can be found in ``ESP32_Send_Data_To_ThingSpeak\src``.
+2. Header files can be found in ``ESP32_Send_Data_To_ThingSpeak\include``.  
+3. The ``platform.ini`` file is a project configuration file that sets necessary parameters for our board within the ``visual studio code`` environment.  
 
 ## Building the project     
 1. Open ``ESP32_Send_Data_To_ThingSpeak\include\credentials.h``  
