@@ -37,7 +37,22 @@ The image below shows the format for the HTTP requests that must be sent to Thin
 The pattern can be used to access more fields (maximum of 8).  
 Note: ``WRITE_API_KEY`` is a 16-digit code. A ``POST`` request can also be used for writing data to the server.  
 
-## Configuring network parameters for the project (``credentials.h`` file)    
+## Building the project     
+1. Open ``ESP32_Send_Data_To_ThingSpeak\include\credentials.h``  
+2. Rename the network parameters in the ``credentials.h`` file using you own network name, password, and ThingSpeak API key.  
+
+Modify the ``#defines`` in the ``credentials.h`` as shown below. Once this is done, build the project and upload the code to your ESP32 board.   
+```
+#define SSID                      "YOUR-SSID"
+#define PASS                      "YOUR-PASSWORD"
+#define WRITE_API_KEY             "YOUR-WRITE-API-KEY"  
+```
+
+## Debugging the code using the serial terminal
+
+## Visualizing the sensor's data  
+![Screenshot (263)](https://user-images.githubusercontent.com/46250887/195719147-5c192529-4e3c-4007-9b85-9c6767c81857.png)
+
 
 
 
