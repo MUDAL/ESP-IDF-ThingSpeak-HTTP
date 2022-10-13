@@ -32,10 +32,10 @@ The image below shows the format for the HTTP requests that must be sent to Thin
 ![Screenshot (262)](https://user-images.githubusercontent.com/46250887/195702299-e5883928-e507-4cdb-97b5-6e371188a06a.png)  
 
 ## Format of HTTP request to write data to ThingSpeak (examples)  
-1. Writing the value 87 to field 1: ``GET https://api.thingspeak.com/update?api_key=<WRITE_API_KEY>&field1=87``   
+1. Writing the value 87 to field1: ``GET https://api.thingspeak.com/update?api_key=<WRITE_API_KEY>&field1=87``   
 2. Writing 75 to field1 and 71 to field2: ``GET https://api.thingspeak.com/update?api_key=<WRITE_API_KEY>&field1=75&field2=71``  
 The pattern can be used to access more fields (maximum of 8).  
-Note: ``WRITE_API_KEY`` is a 16-digit code.  
+Note: ``WRITE_API_KEY`` is a 16-digit code. A ``POST`` request can also be used for writing data to the server.  
 
 ## Configuring network parameters for the project (``credentials.h`` file)    
 
