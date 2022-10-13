@@ -24,11 +24,13 @@ Since we're only sending humidity and temperature, only two fields are required.
 
 ## API keys  
 ``API keys`` allow us to access ThingSpeak channels. With a ``Write API Key``, data can be written to fields within a channel. After setting up a channel, API keys are automatically generated (although new ones can be generated). Check the image below on how to get the ``Write API keys`` within your ``ThingSpeak channel``.  
+
 ![Screenshot (261)](https://user-images.githubusercontent.com/46250887/195701365-70f2340f-a309-4186-8cf4-3f8d9bb16d05.png)  
 
 
 ## Writing to a ThingSpeak channel  
 The image below shows the format for the HTTP requests that must be sent to ThingSpeak in order to read/write data. We're interested in writing data, therefore, we'd focus on the first ``API request`` in the image.  
+
 ![Screenshot (262)](https://user-images.githubusercontent.com/46250887/195702299-e5883928-e507-4cdb-97b5-6e371188a06a.png)  
 
 ## Format of HTTP request to write data to ThingSpeak (examples)  
@@ -48,9 +50,11 @@ Modify the ``#defines`` in the ``credentials.h`` as shown below. Once this is do
 #define WRITE_API_KEY             "YOUR-WRITE-API-KEY"  
 ```
 
-## Debugging the code using the serial terminal
+## Debugging the code using the serial terminal  
+Debug messages are present in different parts of the code to allow the user understand what happens when the program runs. These messages are displayed when calls are made to ``ESP_LOGI()``.   
 
 ## Visualizing the sensor's data  
+
 ![Screenshot (263)](https://user-images.githubusercontent.com/46250887/195719147-5c192529-4e3c-4007-9b85-9c6767c81857.png)
 
 
