@@ -7,6 +7,7 @@ This project involves communicating with the ThingSpeak server with an ``ESP32``
 1. ESP32 Dev Board  
 2. BME280 Sensor  
 3. ThingSpeak account  
+4. Visual Studio Code  
 
 ## Information on the BME280 sensor  
 The BME280 library (which was used in this project) and its documentation can be found in one of my repos (https://github.com/MUDAL/ESP32-and-BME280-communication-using-ESP-IDF-). The default pins used for I2C communication with the sensor are GPIO 18 (SDA) and GPIO 19 (SCL).  
