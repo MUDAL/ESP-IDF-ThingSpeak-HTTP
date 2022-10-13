@@ -25,13 +25,13 @@ Since we're only sending humidity and temperature, only two fields are required.
 ## API keys  
 ``API keys`` allow us to access ThingSpeak channels. With a ``Write API Key``, data can be written to fields within a channel. After setting up a channel, API keys are automatically generated (although new ones can be generated). Check the image below on how to get the ``Write API keys`` within your ``ThingSpeak channel``.  
 
-![Screenshot (261)](https://user-images.githubusercontent.com/46250887/195701365-70f2340f-a309-4186-8cf4-3f8d9bb16d05.png)  
+![Screenshot (264)](https://user-images.githubusercontent.com/46250887/195721762-a3151491-b468-4b5d-9a57-2128990dcd55.png)
 
 
 ## Writing to a ThingSpeak channel  
 The image below shows the format for the HTTP requests that must be sent to ThingSpeak in order to read/write data. We're interested in writing data, therefore, we'd focus on the first ``API request`` in the image.  
 
-![Screenshot (262)](https://user-images.githubusercontent.com/46250887/195702299-e5883928-e507-4cdb-97b5-6e371188a06a.png)  
+![Screenshot (265)](https://user-images.githubusercontent.com/46250887/195721864-8b86d7de-3074-4465-8035-029f84962c16.png) 
 
 ## Format of HTTP request to write data to ThingSpeak (examples)  
 1. Writing the value 87 to field1: ``GET https://api.thingspeak.com/update?api_key=<WRITE_API_KEY>&field1=87``   
