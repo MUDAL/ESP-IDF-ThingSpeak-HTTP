@@ -1,7 +1,7 @@
 # ESP-IDF-ThingSpeak-HTTP  
 
 ## Description  
-This project involves the communication between an ``ESP32 + BME280 sensor`` and the ThingSpeak server using the ``HTTP`` protocol. Humidity and temperature readings are taken by a ``BME280`` sensor and uploaded to ThingSpeak (periodically) by the ``ESP32`` using ``REST APIs``. More information will be provided on these APIs are they are crucial in writing data to the server as well as reading data from it. The project is developed using ``ESP-IDF`` drivers (Wi-Fi, HTTP client, I2C, GPIO, etc.).  
+This project involves the communication between an ``ESP32 + BME280 sensor`` and the ThingSpeak server using the ``HTTP`` protocol. Humidity and temperature readings are taken by a ``BME280`` sensor and uploaded to ``ThingSpeak`` (periodically) by the ``ESP32`` using ``REST APIs``. More information will be provided on these APIs are they are crucial in writing data to the server as well as reading data from it. The project is developed using ``ESP-IDF`` drivers (Wi-Fi, HTTP client, I2C, GPIO, etc.).  
 
 ## Requirements  
 1. ESP32 Dev Board  
