@@ -62,7 +62,7 @@ Debug messages are present in different parts of the code to allow the user unde
 
 ![Screenshot (263)](https://user-images.githubusercontent.com/46250887/195719147-5c192529-4e3c-4007-9b85-9c6767c81857.png)  
 
-## Credits (helpful links)  
+## Credits  
 1. https://github.com/SIMS-IOT-Devices/FreeRTOS-ESP-IDF-HTTP-Client    
 2. https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/wifi.html?highlight=wifi_event_sta_disconnected#esp32-wi-fi-event-description  
 3. https://esp32.com/viewtopic.php?t=23110    
